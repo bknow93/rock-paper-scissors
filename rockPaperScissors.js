@@ -19,7 +19,7 @@ function playRound(playerSelection, computerSelection) {
 
     //Makes comparison that creates tie.
     if (playerSelection == computerSelection){
-        return "It's a tie!";
+        playerScore++ && computerScore++;
     }
     //Makes comparison's that win for player.
     else if ((playerSelection == "rock" && computerSelection == "scissors") ||
@@ -35,23 +35,11 @@ function playRound(playerSelection, computerSelection) {
             }
     }
       
-const playerSelection = prompt("Rock, paper, or scissors?").toLowerCase();
+let playerSelection = prompt("Rock, paper, or scissors?").toLowerCase();
 const computerSelection = computerPlay();
 
 function game(){
-    playRound();
-    /*Please review this function.
-    Game plays two rounds then auto completes.
-    Likely issues with first 'if' statement.*/
-    if (playerScore < 5 || computerScore < 5){
-        prompt("Rock, paper, or scissors?");    
-    }
-    else if (playerScore >= 5){
-            return "You win!";
-        }
-    else if (computerScore >= 5){
-            return "You lose...";
-        }
-    }
+    
+}
 
 console.log(game())
