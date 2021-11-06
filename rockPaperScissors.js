@@ -6,10 +6,10 @@ function computerPlay(){;
     //Formula that draws random number between integers 1 and 3
     let choiceNumber = Math.floor(Math.random () * 3);
     //Displays rock, paper, or scissors depending on which integer is chosen at random
-    if (choiceNumber == 1) {
+    if (choiceNumber = 1) {
         return "rock";
         } 
-    else if (choiceNumber == 2) {
+    else if (choiceNumber = 2) {
         return "paper";
         } 
     else { return "scissors";
@@ -20,21 +20,21 @@ function computerPlay(){;
 function playRound(playerSelection, computerSelection) {
 
     //Makes comparison that creates tie.
-    if (playerSelection == computerSelection){
+    if (playerSelection === computerSelection){
         playerScore++ && computerScore++;
          console.log("Tie!");
         }
     //Makes comparison's that win for player.
-    else if ((playerSelection == "rock" && computerSelection == "scissors") ||
-            (playerSelection == "paper" && computerSelection == "rock") ||
-            (playerSelection == "scissors" && computerSelection == "paper")){
+    else if ((playerSelection === "rock" && computerSelection === "scissors") ||
+            (playerSelection === "paper" && computerSelection === "rock") ||
+            (playerSelection === "scissors" && computerSelection === "paper")){
                 playerScore++;
                  console.log("You win this round!");
         }
     //Makes comparison's that lose for player.
-    else if ((playerSelection == "rock" && computerSelection == "paper") ||
-            (playerSelection == "paper" && computerSelection == "scissors") ||
-            (playerSelection == "scissors" && computerSelection == "rock")){
+    else if ((playerSelection === "rock" && computerSelection === "paper") ||
+            (playerSelection === "paper" && computerSelection === "scissors") ||
+            (playerSelection === "scissors" && computerSelection === "rock")){
                 computerScore++;
                  console.log("You lose this round...");
         }
@@ -43,19 +43,8 @@ function playRound(playerSelection, computerSelection) {
 let playerSelection = prompt("Rock, paper, or scissors?").toLowerCase();
 const computerSelection = computerPlay();
 
-function game(){
-    while ((playerScore < 5) ||
-           (computerScore <5)){
-                playRound();
-           }
-    if (playerScore >= 5){
-        console.log("You win!");
-    }
-    else if (computerScore >= 5){
-        console.log("You lose... better luck next time!")
-    }
-    else {console.log("It's a tie game!");}
-    }
-}
 
-console.log(game())
+
+console.log(playRound())
+console.log(playerScore)
+console.log(computerScore)
