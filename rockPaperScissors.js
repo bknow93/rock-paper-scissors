@@ -1,6 +1,10 @@
 let playerScore = 0;
 let computerScore = 0;
 
+/*Note: A common mistake with conditions is making them use "equal to" (===) rather than say "less than or equal to" (<=). 
+If we wanted to run our loop up to i = 5, the exit condition would need to be i <= cats.length. If we set it to i === cats.length, 
+the loop would not run at all because i is not equal to 5 on the first loop iteration, so it would stop immediately.*/
+
 //Function that stores the computer's move
 function computerPlay(){;
     //Formula that draws random number between integers 1 and 3
