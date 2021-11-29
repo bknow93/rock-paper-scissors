@@ -5,7 +5,7 @@ function computerPlay(){
 }
 
 function playRound(playerSelection, computerSelection){
-    //to be made
+    let playerSelection = playerSelection.toLowerCase();
 }
 
 const playerSelection = "rock"
