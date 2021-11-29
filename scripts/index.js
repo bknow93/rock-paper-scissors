@@ -5,7 +5,22 @@ function computerPlay(){
 }
 
 function playRound(playerSelection, computerSelection){
-    let playerSelection = playerSelection.toLowerCase();
+    playerSelection = playerSelection.toLowerCase();
+    if (playerSelection == computerSelection){
+         return "Tie!";
+        }
+    else if ((playerSelection == "rock" && computerSelection == "scissors") ||
+            (playerSelection == "paper" && computerSelection == "rock") ||
+            (playerSelection == "scissors" && computerSelection == "paper")){
+                 return "You win this round!";
+        }
+    else if ((playerSelection == "rock" && computerSelection == "paper") ||
+            (playerSelection == "paper" && computerSelection == "scissors") ||
+            (playerSelection == "scissors" && computerSelection == "rock")){
+                 return "You lose this round...";
+        }
+    }
+      
 }
 
 const playerSelection = "rock"
