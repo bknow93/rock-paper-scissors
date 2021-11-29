@@ -19,10 +19,8 @@ function playRound(playerSelection, computerSelection){
             (playerSelection == "scissors" && computerSelection == "rock")){
                  return "You lose this round...";
         }
-    }
-      
-}
+    }    
 
-const playerSelection = "rock"
+const playerSelection = prompt("Rock, paper, or scissors?")
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
