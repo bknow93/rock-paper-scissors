@@ -24,3 +24,8 @@ function playRound(playerSelection, computerSelection){
 const playerSelection = prompt("Rock, paper, or scissors?")
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
+
+function playGame(){
+
+}
+
