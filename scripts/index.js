@@ -1,3 +1,6 @@
+//var playerScore = ""
+//var computerScore = ""
+
 function computerPlay(){
     let choices = ["rock","paper","scissors"];
     let compChoice = choices[Math.floor(Math.random() * choices.length)];
@@ -26,7 +29,7 @@ const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
 
 function playGame(oneRound){
-
+    //if loop
 }
 
 const oneRound = playRound();
