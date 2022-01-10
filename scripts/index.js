@@ -10,34 +10,35 @@ function computerPlay(){
 function playRound(playerSelection, computerSelection){
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection == computerSelection){
-         return "Tie!";
+         return "Tie!"
         }
     else if ((playerSelection == "rock" && computerSelection == "scissors") ||
             (playerSelection == "paper" && computerSelection == "rock") ||
             (playerSelection == "scissors" && computerSelection == "paper")){
-                 return "You win this round!";
+                ++playerScore;
+                 return "You win this round!"
         }
     else if ((playerSelection == "rock" && computerSelection == "paper") ||
             (playerSelection == "paper" && computerSelection == "scissors") ||
             (playerSelection == "scissors" && computerSelection == "rock")){
-                 return "You lose this round...";
+                ++computerScore;
+                return "You lose this round..."
         }
     }    
 
-const playerSelection = prompt("Rock, paper, or scissors?");
+let playerSelection = prompt("Rock, paper, or scissors?");
 const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
 
 function playGame(oneRound){
     if (playerScore < 5 || computerScore < 5){
-        oneRound;
+        playRound(playerSelection, computerSelection);
     }
     else if (playerScore >= 5){
         return "You won!";
     }
-    else if (computerScore >=){
+    else if (computerScore >= 5){
         return "You lose...";
     }
 }
 
-const oneRound = playRound();
+console.log(playGame());
