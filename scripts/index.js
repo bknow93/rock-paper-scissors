@@ -28,7 +28,6 @@ function playRound(computerSelection){
     }    
 
 const computerSelection = computerPlay();
-console.log(playRound(computerSelection));
 
 function playGame(){
     if (playerScore <= 4 || computerScore <= 4){
@@ -41,3 +40,5 @@ function playGame(){
         console.log("You lose...");
         }
 }
+
+playGame();
