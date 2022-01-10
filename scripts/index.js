@@ -29,7 +29,15 @@ const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
 
 function playGame(oneRound){
-    //if loop
+    if (playerScore < 5 || computerScore < 5){
+        oneRound;
+    }
+    else if (playerScore >= 5){
+        return "You won!";
+    }
+    else if (computerScore >=){
+        return "You lose...";
+    }
 }
 
 const oneRound = playRound();
