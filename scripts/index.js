@@ -1,5 +1,5 @@
-//var playerScore = ""
-//var computerScore = ""
+let playerScore = 0
+let computerScore = 0
 
 function computerPlay(){
     let choices = ["rock","paper","scissors"];
