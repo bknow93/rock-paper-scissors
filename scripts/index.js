@@ -28,17 +28,18 @@ function playRound(playerSelection, computerSelection){
 
 let playerSelection = prompt("Rock, paper, or scissors?");
 const computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
 
-function playGame(oneRound){
+function playGame(){
     if (playerScore < 5 || computerScore < 5){
         playRound(playerSelection, computerSelection);
-    }
+        }
     else if (playerScore >= 5){
         return "You won!";
-    }
+        }
     else if (computerScore >= 5){
         return "You lose...";
-    }
+        }
 }
 
 console.log(playGame());
