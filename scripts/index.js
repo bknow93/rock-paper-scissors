@@ -1,5 +1,5 @@
-let playerScore = 0
-let computerScore = 0
+let playerScore = 0;
+let computerScore = 0;
 
 function computerPlay(){
     let choices = ["rock","paper","scissors"];
@@ -11,7 +11,7 @@ function playRound(computerSelection){
     let playerSelection = prompt("Rock, paper, or scissors?");
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection == computerSelection){
-         return "Tie!"
+         return "Tie!";
         }
     else if ((playerSelection == "rock" && computerSelection == "scissors") ||
             (playerSelection == "paper" && computerSelection == "rock") ||
@@ -30,15 +30,19 @@ function playRound(computerSelection){
 const computerSelection = computerPlay();
 
 function playGame(){
-    if (playerScore <= 4 || computerScore <= 4){
-        console.log(playRound(computerSelection));
-        }
-    else if (playerScore >= 5){
+    if (playerScore >= 5){
         console.log("You won!");
         }
     else if (computerScore >= 5){
         console.log("You lose...");
         }
+    else if (playerScore <= 4 || computerScore <= 4){
+        console.log(playRound(computerSelection));
+        }
 }
 
 playGame();
+playGame();
+playGame();
+playGame();
+playGame(); 
