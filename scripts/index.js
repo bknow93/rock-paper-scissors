@@ -31,13 +31,15 @@ const computerSelection = computerPlay();
 
 function playGame(){
     if (playerScore >= 6){
-        console.log("You won!");
+        return "You won!";
         }
     else if (computerScore >= 6){
-        console.log("You lose...");
+        return "You lose...";
         }
     else if (playerScore <= 5 || computerScore <= 5){
         console.log(playRound(computerSelection));
+        console.log(playerScore);
+        console.log(computerScore);
         }
 }
 
