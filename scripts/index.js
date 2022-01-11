@@ -30,16 +30,16 @@ function playRound(computerSelection){
 const computerSelection = computerPlay();
 
 function playGame(){
-    if (playerScore >= 6){
-        return "You won!";
-        }
-    else if (computerScore >= 6){
-        return "You lose...";
-        }
-    else if (playerScore <= 5 || computerScore <= 5){
+    if (playerScore <= 5 && computerScore <= 5){
         console.log(playRound(computerSelection));
         console.log(playerScore);
         console.log(computerScore);
+        }
+    else if (playerScore = 5){
+        console.log("You won!");
+        }
+    else if (computerScore = 5){
+        console.log("You lose...");
         }
 }
 
