@@ -10,6 +10,7 @@ function computerPlay(){
 function playRound(computerSelection){
     let playerSelection = prompt("Rock, paper, or scissors?");
     playerSelection = playerSelection.toLowerCase();
+    computerPlay();
     if (playerSelection == computerSelection){
          console.log("Tie!");
         }
