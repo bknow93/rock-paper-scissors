@@ -10,7 +10,7 @@ function computerPlay(){
 function playRound(computerSelection){
     let playerSelection = prompt("Rock, paper, or scissors?");
     playerSelection = playerSelection.toLowerCase();
-    computerPlay();
+    computerSelection;
     if (playerSelection == computerSelection){
          console.log("Tie!");
         }
@@ -30,6 +30,7 @@ function playRound(computerSelection){
 
 const computerSelection = computerPlay();
 
+//Play five rounds, but always returns the same computerSelection choice.
 function playGame(){
         console.log(playRound(computerSelection));
         console.log(playerScore);
